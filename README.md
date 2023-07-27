@@ -1,13 +1,11 @@
-# Flash CV
-This is an auto curriculum system.
+# Psychologist Clinic Site
+A site developed to Amanda Cavetti Corrêa
 
 ### Motivation
-We want users to have access to a attractive curriculum with an easy system interaction.
+She needs a site to disclose her work as psychologist.
 
 ### Requirements
- - An stepper where user can add professional information on each separeted step (basic info, address, professional experiences...);
- - In the end this information should be used to a styled curriculum, where it can be printed;
- - User professional information should be updated any time;
- - User data should be stored only on browser, at this time.
- - At the end user curriculum should be printed as a PDF.
- - React Secure Storage
+ - Minimalist and conceptual
+ - Functional with whatsapp button
+ - Needs to ranks in google
+ - Needs event tracker to know more about users
