@@ -1,12 +1,9 @@
 import { Typography } from '@mui/material'
-import CvCreator from 'features/cvCreator'
+import Header from 'containers/home/components/header'
 
 const Home = () => (
   <>
-    <Typography variant="h6" gutterBottom sx={{ marginTop: '16px' }}>
-      Crie seu currículo online
-    </Typography>
-    <CvCreator />
+    <Header />
   </>
 )
 
