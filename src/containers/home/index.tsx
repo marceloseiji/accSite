@@ -1,10 +1,9 @@
 import { Typography } from '@mui/material'
+import Header from 'containers/home/components/header'
 
 const Home = () => (
   <>
-    <Typography variant="h6" gutterBottom sx={{ marginTop: '16px' }}>
-      Site will be here!
-    </Typography>
+    <Header />
   </>
 )
 
