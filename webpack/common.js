@@ -56,6 +56,19 @@ module.exports = env => {
         {
           test: /\.(woff|woff2|eot|ttf|otf)$/i,
           type: 'asset/resource'
+        },
+        {
+          test: /\.(png|jpe?g|gif)$/i,
+          use: [
+            {
+              loader: 'file-loader'
+            }
+          ]
+        },
+        {
+          test: /\.svg$/i,
+          issuer: /\.tsx?$/,
+          use: ['@svgr/webpack']
         }
       ]
     },
