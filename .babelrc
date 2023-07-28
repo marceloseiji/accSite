@@ -8,5 +8,8 @@
         "runtime": "automatic"
       }
     ]
+  ],
+  "plugins": [
+    "babel-plugin-styled-components"
   ]
 }
