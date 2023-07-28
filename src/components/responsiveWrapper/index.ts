@@ -3,11 +3,11 @@ import { deviceSize } from 'styles/variables'
 
 const ResponsiveWrapper = styled.div`
   box-sizing: border-box;
+  height: 100%;
   margin: 0 16px;
-  width: 100%;
 
   @media ${deviceSize.tablet} {
-    margin: 0 32px;
+    margin: auto;
     width: 768px;
   }
 

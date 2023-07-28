@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, screen } from '@testing-library/react'
-import Home from '../home'
+import Home from '.'
 
 it('Teste de jest', () => {
   render(<Home />)

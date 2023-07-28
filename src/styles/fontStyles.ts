@@ -3,6 +3,7 @@ import LatoThin from 'assets/fonts/Lato-Thin.ttf'
 import LatoLight from 'assets/fonts/Lato-Light.ttf'
 import LatoRegular from 'assets/fonts/Lato-Regular.ttf'
 import LatoBold from 'assets/fonts/Lato-Bold.ttf'
+import Julius from 'assets/fonts/JuliusSansOne-Regular.ttf'
 
 export const FontStyles = createGlobalStyle`
   @font-face {
@@ -24,5 +25,10 @@ export const FontStyles = createGlobalStyle`
     font-family: Lato;
     src: ${LatoBold} format('truetype');
     font-weight: bolder;
+  }
+  @font-face {
+    font-family: Julius;
+    src: ${Julius};
+    font-weight: normal;
   }
 `
