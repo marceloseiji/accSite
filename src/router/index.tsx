@@ -1,9 +1,9 @@
 import { Routes, Route } from 'react-router-dom'
-import Home from 'containers/home'
+import Main from 'containers/main'
 
 const Router = () => (
   <Routes>
-    <Route path="/" element={<Home />} />
+    <Route path="/" element={<Main />} />
   </Routes>
 )
 
