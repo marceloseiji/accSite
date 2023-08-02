@@ -54,7 +54,7 @@ module.exports = env => {
           use: ['style-loader', 'css-loader', 'sass-loader']
         },
         {
-          test: /\.(woff|woff2|eot|ttf|otf)$/i,
+          test: /\.(eot|svg|ttf|woff|woff2|otf)$/,
           type: 'asset/resource'
         },
         {

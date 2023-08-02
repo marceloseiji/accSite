@@ -11,7 +11,8 @@ export const deviceSize = {
 }
 
 export const textSize = {
-  small: '1rem'
+  small: '1rem',
+  large: '1.3rem'
 }
 
 export const colors = {

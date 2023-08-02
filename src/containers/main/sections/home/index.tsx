@@ -1,11 +1,15 @@
 import ResponsiveWrapper from 'components/responsiveWrapper'
-import { Section, Title } from './style'
+import { Section, Title, Paragraph, Hr, TitleWrapper } from './style'
 
 const Home = () => {
   return (
     <Section>
       <ResponsiveWrapper>
-        <Title>Text</Title>
+        <TitleWrapper>
+          <Title>AMANDA CALVETTI CORRÊA</Title>
+          <Hr />
+          <Paragraph>Psicologia clínica ∙ Psicanálise</Paragraph>
+        </TitleWrapper>
       </ResponsiveWrapper>
     </Section>
   )

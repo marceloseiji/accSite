@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { textSize, colors } from 'styles/variables'
 
 export const Nav = styled.nav`
-  bottom: 32px;
+  bottom: 40px;
   left: 0;
   position: fixed;
   width: 100%;

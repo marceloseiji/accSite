@@ -11,7 +11,29 @@ export const Section = styled.section`
   height: 100%;
 `
 
+export const TitleWrapper = styled.div`
+  padding-top: 15vh;
+`
+
 export const Title = styled.h1`
   color: ${colors.white};
-  font-family: 'Julius';
+  font-family: 'Julius Sans One';
+  font-weight: normal;
+  font-size: ${textSize.large};
+  margin-bottom: 16px;
+  text-align: center;
+`
+
+export const Paragraph = styled.p`
+  color: ${colors.white};
+  font-family: 'Lato';
+  font-weight: normal;
+  font-size: ${textSize.small};
+  text-align: center;
+  padding-top: 16px;
+`
+export const Hr = styled.hr`
+  border: 1px solid ${colors.white}50;
+  margin: auto;
+  width: 180px;
 `
