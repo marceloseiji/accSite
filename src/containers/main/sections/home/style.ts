@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import imgUrl from 'assets/images/site-home.jpg'
+import imgUrl from 'assets/images/consultorio-home.jpg'
 import getImageHash from 'utils/getImageHash'
 import { colors, textSize } from 'styles/variables'
 
@@ -22,15 +22,17 @@ export const Title = styled.h1`
   font-size: ${textSize.large};
   margin-bottom: 16px;
   text-align: center;
+  text-shadow: 1px 1px 3px ${colors.grayTextShadow};
 `
 
 export const Paragraph = styled.p`
   color: ${colors.white};
   font-family: 'Lato';
-  font-weight: normal;
+  font-weight: bold;
   font-size: ${textSize.small};
-  text-align: center;
   padding-top: 16px;
+  text-align: center;
+  text-shadow: 1px 1px 5px ${colors.blackTextShadow};
 `
 export const Hr = styled.hr`
   border: 1px solid ${colors.white}50;
