@@ -1,4 +1,13 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+
+const DragImgWrapperAnitmation = keyframes`
+  from {
+    margin-bottom: 4px;
+    }
+  100% {
+    margin-bottom: 8px;
+  }
+`
 
 export const DragImgWrapper = styled.div`
   bottom: 12vh;
@@ -9,6 +18,7 @@ export const DragImgWrapper = styled.div`
 `
 
 export const DragArrowUpImg = styled.img`
+  animation: ${DragImgWrapperAnitmation} 1s alternate infinite;
   margin-bottom: 4px;
   position: absolute;
 `
