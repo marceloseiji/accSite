@@ -12,7 +12,7 @@ export const Section = styled.section`
 `
 
 export const TitleWrapper = styled.div`
-  padding-top: 15vh;
+  padding-top: 10vh;
 `
 
 export const Title = styled.h1`
@@ -22,7 +22,7 @@ export const Title = styled.h1`
   font-size: ${textSize.large};
   margin-bottom: 16px;
   text-align: center;
-  text-shadow: 1px 1px 3px ${colors.grayTextShadow};
+  text-shadow: ${colors.blackTextShadow} 1px 0 10px;
 `
 
 export const Paragraph = styled.p`
@@ -32,7 +32,7 @@ export const Paragraph = styled.p`
   font-size: ${textSize.small};
   padding-top: 16px;
   text-align: center;
-  text-shadow: 1px 1px 5px ${colors.blackTextShadow};
+  text-shadow: ${colors.blackTextShadow} 1px 0 6px;
 `
 export const Hr = styled.hr`
   border: 1px solid ${colors.white}50;
