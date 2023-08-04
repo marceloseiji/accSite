@@ -61,22 +61,22 @@ module.exports = env => {
           test: /\.(png|jp(e*)g|gif)$/,
           type: 'asset/resource'
         },
-        {
-          test: /\.svg$/,
-          use: [
-            {
-              loader: 'svg-url-loader',
-              options: {
-                limit: 10000
-              }
-            }
-          ]
-        }
         // {
-        //   test: /\.svg$/i,
-        //   issuer: /\.tsx?$/,
-        //   use: ['@svgr/webpack']
+        //   test: /\.svg$/,
+        //   use: [
+        //     {
+        //       loader: 'svg-url-loader',
+        //       options: {
+        //         limit: 10000
+        //       }
+        //     }
+        //   ]
         // }
+        {
+          test: /\.svg$/i,
+          issuer: /\.tsx?$/,
+          use: ['@svgr/webpack']
+        }
       ]
     },
     plugins: [
