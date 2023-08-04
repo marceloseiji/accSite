@@ -54,28 +54,12 @@ module.exports = env => {
           use: ['style-loader', 'css-loader', 'sass-loader']
         },
         {
-          test: /\.(eot|svg|ttf|woff|woff2|otf)$/,
+          test: /\.(eot|ttf|woff|woff2|otf)$/,
           type: 'asset/resource'
         },
         {
-          test: /\.(png|jp(e*)g|gif)$/,
+          test: /\.(png|jp(e*)g|gif|svg)$/,
           type: 'asset/resource'
-        },
-        // {
-        //   test: /\.svg$/,
-        //   use: [
-        //     {
-        //       loader: 'svg-url-loader',
-        //       options: {
-        //         limit: 10000
-        //       }
-        //     }
-        //   ]
-        // }
-        {
-          test: /\.svg$/i,
-          issuer: /\.tsx?$/,
-          use: ['@svgr/webpack']
         }
       ]
     },
