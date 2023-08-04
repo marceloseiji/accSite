@@ -1,12 +1,14 @@
-import { IconWrapper } from './style'
+import { DragImgWrapper, DragArrowUpImg, DragBackgroundImg } from './style'
 import getImageHash from 'utils/getImageHash'
+import DragArrowsBackground from 'assets/icons/DragArrowsBackground.svg'
 import DragUpArrows from 'assets/icons/DragUpArrows.svg'
 
 const DragIcon = () => {
   return (
-    <IconWrapper>
-      <img src={getImageHash(DragUpArrows)} />
-    </IconWrapper>
+    <DragImgWrapper>
+      <DragArrowUpImg src={getImageHash(DragUpArrows)} />
+      <DragBackgroundImg src={getImageHash(DragArrowsBackground)} />
+    </DragImgWrapper>
   )
 }
 
