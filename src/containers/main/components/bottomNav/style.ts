@@ -18,6 +18,6 @@ export const Link = styled.a`
   color: ${colors.white};
   font-family: 'Lato';
   font-size: ${textSize.small};
-  font-weight: lighter;
+  font-weight: bolder;
   text-decoration: none;
 `
