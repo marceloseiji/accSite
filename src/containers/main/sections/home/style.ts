@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import imgUrl from 'assets/images/consultorio-home.jpg'
+import imgUrl from 'assets/images/home-background.jpg'
 import getImageHash from 'utils/getImageHash'
 import { colors, textSize } from 'styles/variables'
 
@@ -19,7 +19,7 @@ export const Title = styled.h1`
   color: ${colors.white};
   font-family: 'Julius Sans One';
   font-weight: normal;
-  font-size: ${textSize.large};
+  font-size: ${textSize.medium};
   margin-bottom: 16px;
   text-align: center;
   text-shadow: ${colors.blackTextShadow} 1px 0 10px;
