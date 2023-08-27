@@ -9,6 +9,7 @@ export const Section = styled.section<{url: string}>`
   background-image: ${props => `url(${getImageHash(props.url)})`};
   background-position: center;
   background-size: cover;
-  width: 100%;
   height: 100%;
+  position: relative;
+  width: 100%;
 `
