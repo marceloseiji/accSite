@@ -6,7 +6,7 @@ import { SectionDivider } from 'components/sectionDivider/style'
 
 const Psicanalise = () => {
   return (
-    <Section url={imgUrl}>
+    <Section url={imgUrl} id="psicanalise-section">
       <ResponsiveWrapper>
         <TextWrapper>
           <Title>Como a psicanálise pode te ajudar?</Title>

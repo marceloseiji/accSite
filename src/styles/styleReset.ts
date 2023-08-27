@@ -12,5 +12,8 @@ export const StyleReset = createGlobalStyle`
   #root {
     height: 100%;
     overflow: auto;
+    scroll-behavior: smooth;
   }
+
+  
 `
