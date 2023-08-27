@@ -6,7 +6,7 @@ import imgUrl from 'assets/images/home-background.jpg'
 
 const Home = () => {
   return (
-    <Section url={imgUrl}>
+    <Section url={imgUrl} id="home-section">
       <ResponsiveWrapper>
         <TitleWrapper>
           <Title>AMANDA CALVETTI CORRÊA</Title>

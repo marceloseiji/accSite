@@ -3,10 +3,10 @@ import { Link, List, Nav } from 'containers/main/components/bottomNav/style'
 const BottomNav = () => (
   <Nav aria-label="Menu do site">
     <List>
-      <Link href="">Home</Link>
-      <Link href="">Psicanálise</Link>
-      <Link href="">Sobre</Link>
-      <Link href="">Contato</Link>
+      <Link href="#home-section">Home</Link>
+      <Link href="#psicanalise-section">Psicanálise</Link>
+      <Link href="#about-section">Sobre</Link>
+      <Link href="#contact-section">Contato</Link>
     </List>
   </Nav>
 )

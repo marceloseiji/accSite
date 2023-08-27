@@ -6,7 +6,7 @@ import { SectionDivider } from 'components/sectionDivider/style'
 
 const About = () => {
   return (
-    <Section url={imgUrl}>
+    <Section url={imgUrl} id="about-section">
       <ResponsiveWrapper>
         <TextWrapper>
           <Title>Amanda Calvetti Corrêa</Title>
