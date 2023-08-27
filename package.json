@@ -18,7 +18,9 @@
     "prepare": "husky install",
     "test": "jest --maxWorkers=50%",
     "test:watch": "jest --watch --maxWorkers=25%",
-    "test:coverage": "jest --maxWorkers=25% --coverage"
+    "test:coverage": "jest --maxWorkers=25% --coverage",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d dist"
   },
   "lint-staged": {
     "src/**/*.{ts,tsx}": [
@@ -71,6 +73,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-testing-library": "^5.10.0",
     "file-loader": "^6.2.0",
+    "gh-pages": "^6.0.0",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.3",
@@ -89,5 +92,6 @@
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1"
-  }
+  },
+  "homepage": "http://marceloseiji.github.io/accSite"
 }
