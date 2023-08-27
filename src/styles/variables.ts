@@ -18,6 +18,7 @@ export const textSize = {
 
 export const colors = {
   white: '#ffffff',
+  black: "#000",
   grayTextShadow: '#515151',
   blackTextShadow: '#000'
 }

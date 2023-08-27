@@ -1,28 +1,21 @@
-import { Section } from "containers/main/style"
-import { TextWrapper, Title, Paragraph } from "./style"
+import { Section } from 'containers/main/style'
+import { TextWrapper, Title, Paragraph, ButtonsWrapper } from './style'
 import ResponsiveWrapper from 'components/responsiveWrapper'
-import imgUrl from 'assets/images/about-background.jpg'
+import imgUrl from 'assets/images/contact-background.jpg'
+import SocialButton from 'components/buttons/social'
 
 const Contact = () => {
   return (
     <Section url={imgUrl}>
       <ResponsiveWrapper>
         <TextWrapper>
-          <Title>Amanda Calvetti Corrêa</Title>
-          <Paragraph>
-            Lorem ipsum dolor sit amet, an erant vivendo nominavi his, quas
-            corpora at usu. Labore facilisis patrioque est ei, sed eu odio prima
-            aliquam.
-          </Paragraph>
-          <Paragraph>
-            Ad vix natum suscipit, persius prodesset ea
-            pri. Homero partiendo ex mei. Latine signiferumque ad eos, decore
-            ullamcorper nam.
-          </Paragraph>
-          <Paragraph>
-            Latine signiferumque ad eos, decore
-            ullamcorper nam.
-          </Paragraph>
+          <Title>Contato</Title>
+          <Paragraph>(41) 99922-9920</Paragraph>
+          <Paragraph>Centro Cívico | Curitiba, PR</Paragraph>
+          <ButtonsWrapper>
+            <SocialButton.Instagram />
+            <SocialButton.WhatsApp />
+          </ButtonsWrapper>
         </TextWrapper>
       </ResponsiveWrapper>
     </Section>
