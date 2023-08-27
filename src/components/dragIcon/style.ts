@@ -10,11 +10,12 @@ const DragImgWrapperAnitmation = keyframes`
 `
 
 export const DragImgWrapper = styled.div`
+  align-items: flex-end;
   bottom: 12vh;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
   position: fixed;
+  transform: scale(.9)
 `
 
 export const DragArrowUpImg = styled.img`
