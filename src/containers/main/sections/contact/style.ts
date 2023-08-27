@@ -5,23 +5,29 @@ export const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 18vh 40px 0 32px;
+  padding: 38vh 40px 0 32px;
 `
 
 export const Title = styled.div`
-  color: ${colors.white};
+  color: ${colors.black};
   font-family: 'Lato';
-  font-weight: lighter;
+  font-weight: bold;
   font-size: ${textSize.large};
-  margin-bottom: 24px;
-  text-align: right;
+  text-align: center;
 `
 
 export const Paragraph = styled.p`
-  color: ${colors.white};
+  color: ${colors.black};
   font-family: 'Lato';
-  font-weight: lighter;
+  font-weight: bolder;
   font-size: ${textSize.small};
-  padding-top: 16px;
-  text-align: right;
+  padding-top: 8px;
+  text-align: center;
+`
+
+export const ButtonsWrapper = styled.div`
+  align-self: center;
+  display: flex;
+  margin-top: 10px;
+  gap: 10px
 `
