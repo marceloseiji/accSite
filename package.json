@@ -93,5 +93,5 @@
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1"
   },
-  "homepage": "http://marceloseiji.github.io/accSite"
+  "homepage": "https://marceloseiji.github.io/accSite"
 }
