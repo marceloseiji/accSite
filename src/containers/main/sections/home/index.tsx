@@ -1,9 +1,11 @@
 import ResponsiveWrapper from 'components/responsiveWrapper'
-import { Section, Title, Paragraph, Hr, TitleWrapper } from './style'
+import { Title, Paragraph, Hr, TitleWrapper } from './style'
+import { Section } from "containers/main/style"
+import imgUrl from 'assets/images/home-background.jpg'
 
 const Home = () => {
   return (
-    <Section>
+    <Section url={imgUrl}>
       <ResponsiveWrapper>
         <TitleWrapper>
           <Title>AMANDA CALVETTI CORRÊA</Title>

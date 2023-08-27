@@ -1,9 +1,10 @@
+import { Section, TextWrapper, Title, Paragraph } from "containers/main/style"
 import ResponsiveWrapper from 'components/responsiveWrapper'
-import { Section, TextWrapper, Title, Paragraph } from './style'
+import imgUrl from 'assets/images/psicanalise-background.jpg'
 
 const Psicanalise = () => {
   return (
-    <Section>
+    <Section url={imgUrl}>
       <ResponsiveWrapper>
         <TextWrapper>
           <Title>Como a psicanálise pode te ajudar?</Title>
