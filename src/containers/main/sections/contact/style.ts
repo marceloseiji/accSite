@@ -9,20 +9,22 @@ export const TextWrapper = styled.div`
 `
 
 export const Title = styled.div`
-  color: ${colors.black};
+  color: ${colors.white};
   font-family: 'Lato';
   font-weight: bold;
   font-size: ${textSize.large};
   text-align: center;
+  text-shadow: ${colors.blackTextShadow} 1px 0 10px;
 `
 
 export const Paragraph = styled.p`
-  color: ${colors.black};
+  color: ${colors.white};
   font-family: 'Lato';
   font-weight: bolder;
   font-size: ${textSize.small};
   padding-top: 8px;
   text-align: center;
+  text-shadow: ${colors.blackTextShadow} 1px 0 10px;
 `
 
 export const ButtonsWrapper = styled.div`

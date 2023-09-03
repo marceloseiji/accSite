@@ -2,10 +2,10 @@ import styled, { keyframes } from 'styled-components'
 
 const DragImgWrapperAnitmation = keyframes`
   from {
-    margin-bottom: 4px;
+    margin-bottom: 6px;
     }
   100% {
-    margin-bottom: 8px;
+    margin-bottom: 14px;
   }
 `
 
@@ -15,12 +15,12 @@ export const DragImgWrapper = styled.div`
   display: flex;
   justify-content: center;
   position: fixed;
-  transform: scale(.8)
+  transform: scale(.65)
 `
 
 export const DragArrowUpImg = styled.img`
   animation: ${DragImgWrapperAnitmation} 1s alternate infinite;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
   position: absolute;
 `
 

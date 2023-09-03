@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import getImageHash from 'utils/getImageHash'
 import { colors, textSize } from 'styles/variables'
 
 export const TitleWrapper = styled.div`
