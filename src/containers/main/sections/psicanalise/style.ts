@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import getImageHash from 'utils/getImageHash'
 import { colors, textSize } from 'styles/variables'
 
 export const MainSection = styled.main`
@@ -16,7 +15,7 @@ export const TextWrapper = styled.div`
 export const Title = styled.div`
   color: ${colors.white};
   font-family: 'Lato';
-  font-weight: lighter;
+  font-weight: 400;
   font-size: ${textSize.large};
   margin-bottom: 24px;
   text-align: left;
@@ -25,7 +24,7 @@ export const Title = styled.div`
 export const Paragraph = styled.p`
   color: ${colors.white};
   font-family: 'Lato';
-  font-weight: lighter;
+  font-weight: 300;
   font-size: ${textSize.small};
   padding-top: 16px;
   text-align: left;
