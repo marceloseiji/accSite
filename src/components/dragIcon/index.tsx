@@ -24,7 +24,7 @@ const DragIcon = () => {
   }, [])
 
   return (
-    <DragImgWrapper isvisble={isVisible}>
+    <DragImgWrapper isvisible={isVisible.toString()}>
       <DragArrowUpImg src={getImageHash(DragUpArrows)} />
       <DragBackgroundImg src={getImageHash(DragArrowsBackground)} />
     </DragImgWrapper>

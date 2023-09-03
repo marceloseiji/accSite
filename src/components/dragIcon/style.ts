@@ -1,5 +1,9 @@
 import styled, { keyframes } from 'styled-components'
 
+type DragImgWrapper = {
+  isvisible: string
+}
+
 const DragImgWrapperAnitmation = keyframes`
   from {
     margin-bottom: 6px;
@@ -9,15 +13,15 @@ const DragImgWrapperAnitmation = keyframes`
   }
 `
 
-export const DragImgWrapper = styled.div<{isvisble: boolean}>`
+export const DragImgWrapper = styled.div<DragImgWrapper>`
   align-items: flex-end;
   bottom: 11vh;
   display: flex;
   justify-content: center;
   position: fixed;
   transition: .3s ease;
-  transform: ${props => props.isvisble ? 'scale(.65)' : 'scale(0)'};
-  opacity: ${props => props.isvisble ? 1 : 0};
+  transform: ${({isvisible}) => isvisible === 'true' ? 'scale(.65)' : 'scale(0)'};
+  opacity: ${({isvisible}) => isvisible === 'true' ? 1 : 0};
 `
 
 export const DragArrowUpImg = styled.img`
