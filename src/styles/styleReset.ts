@@ -10,10 +10,7 @@ export const StyleReset = createGlobalStyle`
   html,
   body,
   #root {
-    height: 100%;
-    overflow: auto;
+    height: 100vh;
     scroll-behavior: smooth;
   }
-
-  
 `
