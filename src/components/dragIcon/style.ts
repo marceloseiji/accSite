@@ -9,13 +9,15 @@ const DragImgWrapperAnitmation = keyframes`
   }
 `
 
-export const DragImgWrapper = styled.div`
+export const DragImgWrapper = styled.div<{isvisble: boolean}>`
   align-items: flex-end;
   bottom: 11vh;
   display: flex;
   justify-content: center;
   position: fixed;
-  transform: scale(.65)
+  transition: .3s ease;
+  transform: ${props => props.isvisble ? 'scale(.65)' : 'scale(0)'};
+  opacity: ${props => props.isvisble ? 1 : 0};
 `
 
 export const DragArrowUpImg = styled.img`
