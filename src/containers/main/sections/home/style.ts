@@ -7,7 +7,7 @@ export const TitleWrapper = styled.div`
 
 export const Title = styled.h1`
   color: ${colors.white};
-  font-family: 'Julius Sans One';
+  font-family: 'Belleza', sans-serif;
   font-weight: normal;
   font-size: ${textSize.medium};
   margin-bottom: 16px;
