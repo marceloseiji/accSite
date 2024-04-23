@@ -13,12 +13,13 @@ export const deviceSize = {
 export const textSize = {
   small: '1rem',
   medium: '1.5rem',
-  large: '1.8rem'
+  large: '1.8rem',
+  extraLarge: '2rem'
 }
 
 export const colors = {
   white: '#ffffff',
-  black: "#000",
+  black: '#000',
   grayTextShadow: '#515151',
   blackTextShadow: '#000'
 }
