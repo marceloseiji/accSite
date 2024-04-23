@@ -107,31 +107,5 @@
       }
     ],
     "@typescript-eslint/no-var-requires": "off"
-  },
-  "overrides": [
-    {
-      "files": [
-        "**/__tests__/**/*.tsx?",
-        "**/?(*.)+(spec|test).tsx?"
-      ],
-      "plugins": [
-        "jest-dom",
-        "testing-library",
-        "jest"
-      ],
-      "extends": [
-        "plugin:jest-dom/recommended",
-        "plugin:testing-library/react",
-        "plugin:jest/recommended",
-        "plugin:jest/style"
-      ],
-      "rules": {
-        "files": [
-          "*.test.tsx",
-          "*.test.ts"
-        ],
-        "jest/expect-expect": "off"
-      }
-    }
-  ]
+  }
 }
