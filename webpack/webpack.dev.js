@@ -3,6 +3,6 @@ const common = require('./common')
 
 module.exports = common({
   mode: 'production',
-  port: process.env.port,
+  port: process.env.PORT,
   publicPath: `${process.env.PUBLIC_PATH}:${process.env.PORT}`
 })
