@@ -1,10 +1,11 @@
 import Main from 'containers/main'
 import { StyleReset } from 'styles/styleReset'
+import Router from './router'
 
 const App = () => {
   return (
     <>
-      <Main />
+      <Router />
       <StyleReset />
     </>
   )

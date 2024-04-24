@@ -1,10 +1,12 @@
-// import { Routes, Route } from 'react-router-dom'
-// import Main from 'containers/main'
+import { Routes, Route, BrowserRouter } from 'react-router-dom'
+import Main from 'containers/main'
 
-// const Router = () => (
-//   <Routes>
-//     <Route path="/" element={<Main />} />
-//   </Routes>
-// )
+const Router = () => (
+  <BrowserRouter>
+    <Routes>
+      <Route path="/accSite" element={<Main />} />
+    </Routes>
+  </BrowserRouter>
+)
 
-// export default Router
+export default Router
