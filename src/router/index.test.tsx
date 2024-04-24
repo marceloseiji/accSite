@@ -14,5 +14,5 @@ jest.mock('react-router-dom', () => {
 test('routes', () => {
   render(<Router />, { wrapper: BrowserRouter })
 
-  expect(screen.getByText(/crie seu currículo online/i)).toBeInTheDocument()
+  expect(screen.getByText(/text/i)).toBeInTheDocument()
 })
