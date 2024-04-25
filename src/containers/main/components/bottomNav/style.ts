@@ -15,8 +15,8 @@ export const List = styled.ul`
   justify-content: center;
 `
 
-export const Link = styled.a.attrs<{ isActive?: boolean }>(props => ({
-  isActive: props.isActive || false
+export const Link = styled.a.attrs<{ $isactive?: boolean }>(props => ({
+  $isactive: props.$isactive
 }))`
   border-radius: 4px;
   color: ${colors.white};
@@ -28,7 +28,8 @@ export const Link = styled.a.attrs<{ isActive?: boolean }>(props => ({
   padding: 8px 6px;
   transition: 0.2s ease;
 
-  background-color: ${props => props.isActive && colors.primary};
+  background-color: ${({ $isactive }) =>
+    $isactive ? colors.primary : undefined};
 `
 
 // const Input = styled.input.attrs<{ $size?: string }>(props => ({

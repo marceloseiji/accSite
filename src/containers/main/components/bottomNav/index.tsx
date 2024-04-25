@@ -23,7 +23,7 @@ const BottomNav = () => {
         {sections.map((section, index) => (
           <Link
             key={index}
-            isActive={sectionHash === section.href}
+            $isactive={sectionHash === section.href}
             href={section.href}
             onClick={() => setSectionHash(section.href)}
           >
