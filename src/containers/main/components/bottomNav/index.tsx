@@ -1,22 +1,35 @@
 import { useEffect, useState } from 'react'
 import { Link, List, Nav } from 'containers/main/components/bottomNav/style'
+import { useLocation } from 'react-router-dom'
 
 const BottomNav = () => {
-  const [isActive, setIsActive] = useState('') // WIP deixar os itens do menu ativos
+  const location = useLocation()
+  const [sectionHash, setSectionHash] = useState('')
+
+  const sections = [
+    { name: 'Home', href: '#home-section' },
+    { name: 'Psicanálise', href: '#psicanalise-section' },
+    { name: 'Sobre', href: '#about-section' },
+    { name: 'Contato', href: '#contact-section' }
+  ]
 
   useEffect(() => {
-    console.log()
-  })
+    setSectionHash(location.hash)
+  }, [location.hash])
 
   return (
     <Nav aria-label="Menu do site">
       <List>
-        <Link isActive href="#home-section">
-          Home
-        </Link>
-        <Link href="#psicanalise-section">Psicanálise</Link>
-        <Link href="#about-section">Sobre</Link>
-        <Link href="#contact-section">Contato</Link>
+        {sections.map((section, index) => (
+          <Link
+            key={index}
+            isActive={sectionHash === section.href}
+            href={section.href}
+            onClick={() => setSectionHash(section.href)}
+          >
+            {section.name}
+          </Link>
+        ))}
       </List>
     </Nav>
   )

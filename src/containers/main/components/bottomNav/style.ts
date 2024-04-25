@@ -26,6 +26,7 @@ export const Link = styled.a.attrs<{ isActive?: boolean }>(props => ({
   font-weight: 300;
   text-decoration: none;
   padding: 8px 6px;
+  transition: 0.2s ease;
 
   background-color: ${props => props.isActive && colors.primary};
 `
