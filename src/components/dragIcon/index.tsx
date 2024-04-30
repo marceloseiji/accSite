@@ -8,7 +8,7 @@ const DragIcon = () => {
   const [isVisible, setIsVisible] = useState(true)
 
   const scrollLiestener = () => {
-    let heigthToHide = 300
+    const heigthToHide = 300
     const windowScroll = window.scrollY
 
     if (windowScroll > heigthToHide) {
