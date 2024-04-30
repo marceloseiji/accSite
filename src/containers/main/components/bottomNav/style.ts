@@ -1,11 +1,19 @@
 import styled from 'styled-components'
-import { textSize, colors } from 'styles/variables'
+import { textSize, colors, deviceSize } from 'styles/variables'
 
 export const Nav = styled.nav`
   bottom: 30px;
   left: 0;
   position: fixed;
   width: 100%;
+  height: fit-content;
+  z-index: 1;
+
+  @media ${deviceSize.laptop} {
+    top: 0;
+    height: 72px;
+    background-color: #00000070;
+  }
 `
 
 export const List = styled.ul`
@@ -13,6 +21,11 @@ export const List = styled.ul`
   display: flex;
   gap: 0.6rem;
   justify-content: center;
+  height: 100%;
+
+  @media ${deviceSize.laptop} {
+    justify-content: left;
+  }
 `
 
 export const Link = styled.a.attrs<{ $isactive?: boolean }>(props => ({
