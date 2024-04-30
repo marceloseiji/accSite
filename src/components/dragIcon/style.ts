@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components'
+import { deviceSize } from 'styles/variables'
 
 type DragImgWrapper = {
   isvisible: string
@@ -19,9 +20,14 @@ export const DragImgWrapper = styled.div<DragImgWrapper>`
   display: flex;
   justify-content: center;
   position: fixed;
-  transition: .3s ease;
-  transform: ${({isvisible}) => isvisible === 'true' ? 'scale(.65)' : 'scale(0)'};
-  opacity: ${({isvisible}) => isvisible === 'true' ? 1 : 0};
+  transition: 0.3s ease;
+  transform: ${({ isvisible }) =>
+    isvisible === 'true' ? 'scale(.65)' : 'scale(0)'};
+  opacity: ${({ isvisible }) => (isvisible === 'true' ? 1 : 0)};
+
+  @media ${deviceSize.laptop} {
+    display: none;
+  }
 `
 
 export const DragArrowUpImg = styled.img`
