@@ -1,11 +1,21 @@
 import styled from 'styled-components'
 import { colors, textSize, deviceSize } from 'styles/variables'
 
-export const TitleWrapper = styled.div`
-  padding-top: 10vh;
+export const TextWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 60vh;
 
-  @media ${deviceSize.laptop} {
-    padding-top: 30vh;
+  @media ${deviceSize.tablet} {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-bottom: 35vh;
+    padding-left: 3vw;
+    width: 55%;
   }
 `
 
@@ -41,12 +51,39 @@ export const Paragraph = styled.p`
     font-size: ${textSize.medium};
   }
 `
+
 export const Hr = styled.hr`
   border: 1px solid ${colors.white}50;
-  margin: auto;
+  margin: 0 auto;
   width: 180px;
 
-  @media ${deviceSize.laptop} {
+  @media ${deviceSize.tablet} {
     display: none;
+  }
+`
+
+export const HomeWrapper = styled.div<{ src: string }>`
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-image: ${props => `url(${props.src})`};
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media ${deviceSize.tablet} {
+    background-image: none;
+    background-color: #343230;
+  }
+`
+
+export const HomeImage = styled.img`
+  display: none;
+
+  @media ${deviceSize.tablet} {
+    display: initial;
+    height: 100%;
+    width: 45%;
+    object-fit: cover;
   }
 `

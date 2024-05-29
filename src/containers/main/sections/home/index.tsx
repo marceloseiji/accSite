@@ -1,21 +1,27 @@
-import ResponsiveWrapper from 'components/responsiveWrapper'
-import { Title, Paragraph, Hr, TitleWrapper } from './style'
+import {
+  Title,
+  Paragraph,
+  Hr,
+  TextWrapper,
+  HomeWrapper,
+  HomeImage
+} from './style'
 import { Section } from 'containers/main/style'
 import { SectionDivider } from 'components/sectionDivider/style'
-import Backdrop from 'components/backdrop'
 import imgUrl from 'assets/images/home-background.jpg'
+import getImageHash from 'utils/getImageHash'
 
 const Home = () => {
   return (
-    <Section url={imgUrl} id="home-section">
-      <ResponsiveWrapper>
-        <TitleWrapper>
+    <Section id="home-section">
+      <HomeWrapper src={getImageHash(imgUrl)}>
+        <HomeImage src={getImageHash(imgUrl)} width="45%" height="100%" />
+        <TextWrapper>
           <Title>AMANDA CALVETTI CORRÊA</Title>
           <Hr />
           <Paragraph>Psicologia clínica ∙ Psicanálise</Paragraph>
-        </TitleWrapper>
-      </ResponsiveWrapper>
-      <Backdrop />
+        </TextWrapper>
+      </HomeWrapper>
       <SectionDivider color="#161616" />
     </Section>
   )
