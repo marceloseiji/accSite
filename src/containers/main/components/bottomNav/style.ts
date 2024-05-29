@@ -1,18 +1,30 @@
 import styled from 'styled-components'
 import { textSize, colors, deviceSize } from 'styles/variables'
 
-export const Nav = styled.nav`
+export const Nav = styled.nav<{ $isScrollDown: boolean }>`
   bottom: 30px;
   left: 0;
   position: fixed;
   width: 100%;
   height: fit-content;
   z-index: 1;
+  transition: 0.5s ease;
 
-  @media ${deviceSize.laptop} {
+  @media ${deviceSize.tablet} {
     top: 0;
     height: 72px;
-    background-color: #00000070;
+    background-color: ${({ $isScrollDown }) =>
+      $isScrollDown ? `${colors.primary}70` : undefined};
+  }
+`
+
+export const NavWrapper = styled.div`
+  justify-content: center;
+  display: flex;
+  height: 100%;
+
+  @media ${deviceSize.tablet} {
+    justify-content: left;
   }
 `
 
@@ -21,9 +33,10 @@ export const List = styled.ul`
   display: flex;
   gap: 0.6rem;
   justify-content: center;
+  width: 100%;
   height: 100%;
 
-  @media ${deviceSize.laptop} {
+  @media ${deviceSize.tablet} {
     justify-content: left;
   }
 `

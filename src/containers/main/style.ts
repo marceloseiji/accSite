@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import getImageHash from 'utils/getImageHash'
 import { deviceSize } from 'styles/variables'
 
 export const MainSection = styled.main`
@@ -7,7 +6,6 @@ export const MainSection = styled.main`
 `
 
 export const Section = styled.section<{ url: string }>`
-  background-image: ${props => `url(${getImageHash(props.url)})`};
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -16,7 +14,9 @@ export const Section = styled.section<{ url: string }>`
   width: 100%;
 
   @media ${deviceSize.laptop} {
+    background-color: black;
     background-position: right;
     background-size: initial;
+    background-image: none;
   }
 `

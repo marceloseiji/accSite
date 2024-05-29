@@ -16,6 +16,10 @@ const ResponsiveWrapper = styled.div`
   @media ${deviceSize.laptop} {
     width: 1024px;
   }
+
+  @media ${deviceSize.desktop} {
+    width: 1264px;
+  }
 `
 
 export default ResponsiveWrapper
