@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors, textSize } from 'styles/variables'
+import { colors, textSize, deviceSize } from 'styles/variables'
 
 export const MainSection = styled.main`
   width: 100%;
@@ -8,8 +8,9 @@ export const MainSection = styled.main`
 export const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  width: 50%;
   height: 100%;
-  padding: 18vh 40px 0 32px;
+  justify-content: center;
 `
 
 export const Title = styled.div`
@@ -28,4 +29,28 @@ export const Paragraph = styled.p`
   font-size: ${textSize.small};
   padding-top: 16px;
   text-align: left;
+`
+
+export const PsicanaliseWrapper = styled.div<{ src: string }>`
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-image: ${props => `url(${props.src})`};
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media ${deviceSize.tablet} {
+  }
+`
+
+export const PsicanaliseImage = styled.img`
+  display: none;
+
+  @media ${deviceSize.tablet} {
+    display: initial;
+    height: 100%;
+    width: 45%;
+    object-fit: cover;
+  }
 `

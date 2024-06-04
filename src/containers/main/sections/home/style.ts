@@ -11,11 +11,11 @@ export const TextWrapper = styled.div`
   @media ${deviceSize.tablet} {
     display: flex;
     flex-direction: column;
+    flex: 1;
     align-items: flex-start;
     justify-content: center;
     padding-bottom: 35vh;
     padding-left: 3vw;
-    width: 55%;
   }
 `
 
@@ -77,13 +77,17 @@ export const HomeWrapper = styled.div<{ src: string }>`
   }
 `
 
-export const HomeImage = styled.img`
+export const HomeImage = styled.img<{ width: string; height: string }>`
   display: none;
 
   @media ${deviceSize.tablet} {
     display: initial;
-    height: 100%;
-    width: 45%;
+    height: ${({ height }) => height || '100%'};
+    width: ${({ width }) => width || '100%'};
     object-fit: cover;
   }
+`
+
+export const ImageWrapper = styled.div`
+  flex: 1;
 `
