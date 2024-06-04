@@ -15,17 +15,23 @@ import ResponsiveWrapper from 'components/responsiveWrapper'
 
 const Home = () => {
   return (
-    <Section url="" id="home-section">
-      <HomeWrapper src={getImageHash(imgUrl)}>
-        <ImageWrapper>
-          <HomeImage src={getImageHash(imgUrl)} width="42%" height="60%" />
-        </ImageWrapper>
-        <TextWrapper>
-          <Title>AMANDA CALVETTI CORRÊA</Title>
-          <Hr />
-          <Paragraph>Psicologia clínica ∙ Psicanálise</Paragraph>
-        </TextWrapper>
-      </HomeWrapper>
+    <Section
+      url={getImageHash(imgUrl)}
+      backgroundColor="#343230"
+      id="home-section"
+    >
+      <ResponsiveWrapper>
+        <HomeWrapper src={getImageHash(imgUrl)}>
+          <ImageWrapper>
+            <HomeImage src={getImageHash(imgUrl)} width="42%" height="60%" />
+          </ImageWrapper>
+          <TextWrapper>
+            <Title>AMANDA CALVETTI CORRÊA</Title>
+            <Hr />
+            <Paragraph>Psicologia clínica ∙ Psicanálise</Paragraph>
+          </TextWrapper>
+        </HomeWrapper>
+      </ResponsiveWrapper>
       <SectionDivider color="#161616" />
     </Section>
   )

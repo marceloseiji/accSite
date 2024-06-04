@@ -28,7 +28,7 @@ export const Title = styled.h1`
   text-align: center;
   text-shadow: ${colors.blackTextShadow} 1px 0 10px;
 
-  @media ${deviceSize.laptop} {
+  @media ${deviceSize.tablet} {
     font-size: ${textSize.extraLarge};
     text-align: left;
     margin-bottom: 0px;
@@ -44,7 +44,7 @@ export const Paragraph = styled.p`
   text-align: center;
   text-shadow: ${colors.blackTextShadow} 1px 0 6px;
 
-  @media ${deviceSize.laptop} {
+  @media ${deviceSize.tablet} {
     text-align: left;
     margin-top: 0px;
     font-weight: 100;
@@ -73,7 +73,6 @@ export const HomeWrapper = styled.div<{ src: string }>`
 
   @media ${deviceSize.tablet} {
     background-image: none;
-    background-color: #343230;
   }
 `
 
