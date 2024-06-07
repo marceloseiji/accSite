@@ -3,7 +3,7 @@ import { deviceSize } from 'styles/variables'
 
 type SectionProps = {
   url?: string
-  backgroundColor?: string
+  backgroundcolor?: string
 }
 
 export const MainSection = styled.main`
@@ -15,12 +15,13 @@ export const Section = styled.section<SectionProps>`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: ${({ backgroundcolor }) => backgroundcolor || ''};
   height: 100%;
   position: relative;
   width: 100%;
 
   @media ${deviceSize.tablet} {
-    background-color: ${({ backgroundColor }) => backgroundColor || ''};
+    background-color: ${({ backgroundcolor }) => backgroundcolor || ''};
     background-position: right;
     background-size: initial;
     background-image: none;

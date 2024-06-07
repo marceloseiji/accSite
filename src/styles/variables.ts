@@ -13,16 +13,21 @@ export const deviceSize = {
 }
 
 export const textSize = {
+  tiny: '0.8rem',
   small: '1rem',
   medium: '1.2rem',
   large: '1.6rem',
-  extraLarge: '2.2rem'
+  extraLarge: '2.2rem',
+  largest: '4.2rem'
 }
 
 export const colors = {
   white: '#ffffff',
+  offWhite: 'EEEEEE',
   black: '#0c0c0c',
   grayTextShadow: '#515151',
   blackTextShadow: '#000',
-  primary: '#5f533c'
+  primary: '#77868C',
+  primaryStrong: '#65767D'
+  // secondary: ''
 }

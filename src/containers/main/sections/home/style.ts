@@ -6,54 +6,78 @@ export const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 60vh;
 
   @media ${deviceSize.tablet} {
+    position: relative;
+    left: -40px;
     display: flex;
     flex-direction: column;
     flex: 1;
     align-items: flex-start;
     justify-content: center;
-    padding-bottom: 35vh;
-    padding-left: 3vw;
   }
+`
+
+export const BlurWrapper = styled.div`
+  padding: 30px 60px;
+  border: 1px solid #${colors.offWhite}80;
+  position: relative;
+  border-radius: 3px;
+  background: ${colors.primary}65;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 `
 
 export const Title = styled.h1`
   color: ${colors.white};
-  font-family: 'Belleza', sans-serif;
+  font-family: 'Corinthia', cursive;
+  font-style: normal;
   font-weight: normal;
   font-size: ${textSize.large};
   margin-bottom: 16px;
   text-align: center;
-  text-shadow: ${colors.blackTextShadow} 1px 0 10px;
 
   @media ${deviceSize.tablet} {
-    font-size: ${textSize.extraLarge};
+    font-size: ${textSize.largest};
     text-align: left;
     margin-bottom: 0px;
+  }
+`
+
+export const Subtitle = styled.p`
+  color: ${colors.white};
+  font-family: 'Lato';
+  font-weight: 300;
+  font-size: ${textSize.small};
+  margin-top: 16px;
+  text-align: center;
+  position: relative;
+  top: -12px;
+
+  @media ${deviceSize.tablet} {
+    text-align: left;
+    margin-top: 0px;
   }
 `
 
 export const Paragraph = styled.p`
   color: ${colors.white};
   font-family: 'Lato';
-  font-weight: bold;
+  font-weight: 300;
   font-size: ${textSize.small};
   margin-top: 16px;
   text-align: center;
-  text-shadow: ${colors.blackTextShadow} 1px 0 6px;
 
   @media ${deviceSize.tablet} {
     text-align: left;
     margin-top: 0px;
-    font-weight: 100;
     font-size: ${textSize.medium};
   }
 `
 
 export const Hr = styled.hr`
-  border: 1px solid ${colors.white}50;
+  border: 1px solid ${colors.offWhite};
   margin: 0 auto;
   width: 180px;
 
@@ -62,7 +86,7 @@ export const Hr = styled.hr`
   }
 `
 
-export const HomeWrapper = styled.div<{ src: string }>`
+export const HomeWrapper = styled.div<{ src?: string }>`
   display: flex;
   width: 100%;
   height: 100%;
@@ -80,6 +104,8 @@ export const HomeImage = styled.img<{ width: string; height: string }>`
   display: none;
 
   @media ${deviceSize.tablet} {
+    border: 1px solid #${colors.offWhite}90;
+    border-radius: 3px;
     display: initial;
     height: ${({ height }) => height || '100%'};
     width: ${({ width }) => width || '100%'};
@@ -89,4 +115,7 @@ export const HomeImage = styled.img<{ width: string; height: string }>`
 
 export const ImageWrapper = styled.div`
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `

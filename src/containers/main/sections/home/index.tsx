@@ -5,30 +5,45 @@ import {
   TextWrapper,
   HomeWrapper,
   HomeImage,
-  ImageWrapper
+  ImageWrapper,
+  BlurWrapper,
+  Subtitle
 } from './style'
 import { Section } from 'containers/main/style'
 import { SectionDivider } from 'components/sectionDivider/style'
 import imgUrl from 'assets/images/home-background.jpg'
 import getImageHash from 'utils/getImageHash'
 import ResponsiveWrapper from 'components/responsiveWrapper'
+import { colors } from 'styles/variables'
 
 const Home = () => {
   return (
-    <Section
-      url={getImageHash(imgUrl)}
-      backgroundColor="#343230"
-      id="home-section"
-    >
+    <Section backgroundcolor={colors.primary} id="home-section">
       <ResponsiveWrapper>
-        <HomeWrapper src={getImageHash(imgUrl)}>
+        <HomeWrapper>
           <ImageWrapper>
-            <HomeImage src={getImageHash(imgUrl)} width="42%" height="60%" />
+            <HomeImage src={getImageHash(imgUrl)} width="100%" height="60%" />
           </ImageWrapper>
           <TextWrapper>
-            <Title>AMANDA CALVETTI CORRÊA</Title>
-            <Hr />
-            <Paragraph>Psicologia clínica ∙ Psicanálise</Paragraph>
+            <BlurWrapper>
+              <Title>Amanda Calvetti Corrêa</Title>
+              <Hr />
+              <Subtitle>Psicologia clínica ∙ Psicanálise</Subtitle>
+              <Paragraph>
+                Lorem ipsum dolor sit amet, an erant vivendo nominavi his, quas
+                corpora at usu. Labore facilisis patrioque est ei, sed eu odio
+                prima aliquam. Graecis percipit mea cu, dignissim democritum
+                suscipiantur sed ei, vis eu summo platonem adolescens. Mel solum
+                verear id, qui quem mazim recusabo in. Graecis percipit mea cu,
+                dignissim democritum suscipiantur sed ei, vis eu summo platonem
+                adolescens. Mel solum verear id, qui quem mazim recusabo in.
+                <br />
+                <br />
+                Graecis percipit mea cu, dignissim democritum suscipiantur sed
+                ei, vis eu summo platonem adolescens. Mel solum verear id, qui
+                quem mazim recusabo in.
+              </Paragraph>
+            </BlurWrapper>
           </TextWrapper>
         </HomeWrapper>
       </ResponsiveWrapper>
