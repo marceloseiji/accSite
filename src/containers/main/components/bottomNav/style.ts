@@ -9,6 +9,8 @@ export const Nav = styled.nav<{ $isScrollDown: boolean }>`
   height: fit-content;
   z-index: 1;
   transition: 0.5s ease;
+  background-color: ${colors.primaryStrong};
+  border-bottom: 1px solid #${colors.offWhite}80;
 
   @media ${deviceSize.tablet} {
     top: 0;
