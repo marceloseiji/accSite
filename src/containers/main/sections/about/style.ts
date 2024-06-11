@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 import { colors, textSize } from 'styles/variables'
 
 export const TextWrapper = styled.div`
