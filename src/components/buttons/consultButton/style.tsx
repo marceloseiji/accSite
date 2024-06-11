@@ -1,0 +1,33 @@
+import styled from 'styled-components'
+import { textSize, colors, deviceSize } from 'styles/variables'
+
+export const Button = styled.button`
+  border: 1px solid #${colors.offWhite};
+  border-radius: 3px;
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: ${colors.secondary};
+  cursor: pointer;
+  transition: 0.2s ease;
+  width: 100%;
+  justify-content: center;
+
+  &:hover {
+    background-color: ${colors.secondary}99;
+  }
+
+  @media ${deviceSize.tablet} {
+    width: auto;
+  }
+`
+
+export const ButtonText = styled.span`
+  margin-left: 8px;
+  color: ${colors.white};
+  font-family: 'Lato';
+  font-weight: 300;
+  font-size: ${textSize.tiny};
+`

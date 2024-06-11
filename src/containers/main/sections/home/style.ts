@@ -12,10 +12,17 @@ export const TextWrapper = styled.div`
     left: -40px;
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: 3;
     align-items: flex-start;
     justify-content: center;
   }
+`
+
+export const ImageWrapper = styled.div`
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
 
 export const BlurWrapper = styled.div`
@@ -67,12 +74,12 @@ export const Paragraph = styled.p`
   font-weight: 300;
   font-size: ${textSize.small};
   margin-top: 16px;
+  margin-bottom: 24px;
   text-align: center;
 
   @media ${deviceSize.tablet} {
     text-align: left;
     margin-top: 0px;
-    font-size: ${textSize.medium};
   }
 `
 
@@ -111,11 +118,4 @@ export const HomeImage = styled.img<{ width: string; height: string }>`
     width: ${({ width }) => width || '100%'};
     object-fit: cover;
   }
-`
-
-export const ImageWrapper = styled.div`
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 `

@@ -28,6 +28,6 @@ export const colors = {
   grayTextShadow: '#515151',
   blackTextShadow: '#000',
   primary: '#77868C',
-  primaryStrong: '#65767D'
-  // secondary: ''
+  primaryStrong: '#65767D',
+  secondary: '#624854'
 }

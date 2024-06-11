@@ -15,6 +15,7 @@ import imgUrl from 'assets/images/home-background.jpg'
 import getImageHash from 'utils/getImageHash'
 import ResponsiveWrapper from 'components/responsiveWrapper'
 import { colors } from 'styles/variables'
+import ConsultButton from 'components/buttons/consultButton'
 
 const Home = () => {
   return (
@@ -43,6 +44,7 @@ const Home = () => {
                 ei, vis eu summo platonem adolescens. Mel solum verear id, qui
                 quem mazim recusabo in.
               </Paragraph>
+              <ConsultButton />
             </BlurWrapper>
           </TextWrapper>
         </HomeWrapper>
