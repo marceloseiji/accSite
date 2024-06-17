@@ -4,7 +4,6 @@ import About from './sections/about'
 import Contact from './sections/contact'
 import BottomNav from 'containers/main/components/bottomNav'
 import { MainSection } from 'containers/main/style'
-import DragIcon from 'components/dragIcon'
 
 const Main = () => (
   <>
@@ -14,7 +13,6 @@ const Main = () => (
       <About />
       <Contact />
     </MainSection>
-    <DragIcon />
     <BottomNav />
   </>
 )

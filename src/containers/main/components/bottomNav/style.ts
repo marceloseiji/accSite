@@ -2,15 +2,15 @@ import styled from 'styled-components'
 import { textSize, colors, deviceSize } from 'styles/variables'
 
 export const Nav = styled.nav<{ $isScrollDown: boolean }>`
-  bottom: 30px;
+  bottom: 0;
   left: 0;
+  border-top: 1px solid #${colors.offWhite};
   position: fixed;
   width: 100%;
-  height: fit-content;
+  height: 64px;
   z-index: 1;
   transition: 0.5s ease;
   background-color: ${colors.primaryStrong};
-  border-bottom: 1px solid #${colors.offWhite}80;
 
   @media ${deviceSize.tablet} {
     top: 0;

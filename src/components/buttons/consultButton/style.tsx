@@ -12,15 +12,21 @@ export const Button = styled.button`
   background-color: ${colors.secondary};
   cursor: pointer;
   transition: 0.2s ease;
-  width: 100%;
+  width: -webkit-fill-available;
   justify-content: center;
+  position: fixed;
+  left: 0;
+  bottom: 75px;
+  margin: 0 12px;
 
   &:hover {
     background-color: ${colors.secondary}99;
   }
 
   @media ${deviceSize.tablet} {
+    position: static;
     width: auto;
+    width: 100%;
   }
 `
 
