@@ -13,11 +13,12 @@ export const deviceSize = {
 }
 
 export const textSize = {
-  tiny: '0.8rem',
+  tiny: '0.875rem',
   small: '1rem',
   medium: '1.2rem',
   large: '1.6rem',
   extraLarge: '2.2rem',
+  ultraLarge: '3rem',
   largest: '4.2rem'
 }
 

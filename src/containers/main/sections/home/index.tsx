@@ -1,13 +1,13 @@
 import {
   Title,
   Paragraph,
-  Hr,
   TextWrapper,
   HomeWrapper,
   HomeImage,
   ImageWrapper,
   BlurWrapper,
-  Subtitle
+  Subtitle,
+  TextImageWrapper
 } from './style'
 import { Section } from 'containers/main/style'
 import { SectionDivider } from 'components/sectionDivider/style'
@@ -28,7 +28,6 @@ const Home = () => {
           <TextWrapper>
             <BlurWrapper>
               <Title>Amanda Calvetti Corrêa</Title>
-              <Hr />
               <Subtitle>Psicologia clínica ∙ Psicanálise</Subtitle>
               <Paragraph>
                 Lorem ipsum dolor sit amet, an erant vivendo nominavi his, quas
@@ -40,6 +39,13 @@ const Home = () => {
                 adolescens. Mel solum verear id, qui quem mazim recusabo in.
                 <br />
                 <br />
+                <TextImageWrapper>
+                  <HomeImage
+                    src={getImageHash(imgUrl)}
+                    width="210px"
+                    height="230px"
+                  />
+                </TextImageWrapper>
                 Graecis percipit mea cu, dignissim democritum suscipiantur sed
                 ei, vis eu summo platonem adolescens. Mel solum verear id, qui
                 quem mazim recusabo in.
