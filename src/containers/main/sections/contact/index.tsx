@@ -6,7 +6,7 @@ import SocialButton from 'components/buttons/social'
 
 const Contact = () => {
   return (
-    <Section url={imgUrl} id="contact-section">
+    <Section $url={imgUrl} id="contact-section">
       <ResponsiveWrapper>
         <TextWrapper>
           <Title>Contato</Title>

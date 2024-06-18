@@ -5,7 +5,7 @@ import imgUrl from 'assets/images/about-background.jpg'
 
 const About = () => {
   return (
-    <Section url={imgUrl} id="about-section">
+    <Section $url={imgUrl} id="about-section">
       <ResponsiveWrapper>
         <TextWrapper>
           <Title>Amanda Calvetti Corrêa</Title>
