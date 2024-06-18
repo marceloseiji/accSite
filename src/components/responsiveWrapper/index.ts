@@ -5,7 +5,6 @@ const ResponsiveWrapper = styled.div`
   box-sizing: border-box;
   height: 100%;
   margin: 0 24px;
-  position: sticky;
   z-index: 1;
 
   @media ${deviceSize.tablet} {
