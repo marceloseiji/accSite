@@ -5,7 +5,14 @@ export const MainSection = styled.main`
   width: 100%;
 `
 
-export const TextWrapper = styled.div``
+export const TextWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  @media ${deviceSize.tablet} {
+    flex: 3;
+    margin-right: 24px;
+  }
+`
 
 export const Title = styled.div`
   color: ${colors.white};
@@ -37,8 +44,15 @@ export const PsicanaliseWrapper = styled.div`
 `
 
 export const ImageWrapper = styled.div`
-  flex: 2;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 16px;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  @media ${deviceSize.tablet} {
+    flex: 2;
+    height: 360px;
+  }
 `
