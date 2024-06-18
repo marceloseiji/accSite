@@ -14,7 +14,7 @@ import { colors } from 'styles/variables'
 
 const Psicanalise = () => {
   return (
-    <Section backgroundcolor={colors.primaryStrong} id="psicanalise-section">
+    <Section $backgroundcolor={colors.primaryStrong} id="psicanalise-section">
       <ResponsiveWrapper>
         <PsicanaliseWrapper>
           <TextWrapper>
@@ -33,7 +33,7 @@ const Psicanalise = () => {
             </Paragraph>
           </TextWrapper>
           <ImageWrapper>
-            <Image src={getImageHash(imgUrl)} width="250px" height="250px" />
+            <Image src={getImageHash(imgUrl)} width="100%" height="100%" />
           </ImageWrapper>
         </PsicanaliseWrapper>
       </ResponsiveWrapper>
