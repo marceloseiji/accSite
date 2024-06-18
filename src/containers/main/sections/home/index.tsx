@@ -19,7 +19,7 @@ import Image from 'components/image'
 
 const Home = () => {
   return (
-    <Section backgroundcolor={colors.primary} id="home-section">
+    <Section $backgroundcolor={colors.primary} $screenheight id="home-section">
       <ResponsiveWrapper>
         <HomeWrapper>
           <ImageWrapper>
