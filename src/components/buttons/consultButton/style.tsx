@@ -37,3 +37,19 @@ export const ButtonText = styled.span`
   font-weight: 300;
   font-size: ${textSize.tiny};
 `
+
+export const MainButtonWrapper = styled.div`
+  position: relative;
+  z-index: 10;
+  display: block;
+  @media ${deviceSize.tablet} {
+    display: none;
+  }
+`
+
+export const HomeButtonWrapper = styled.div`
+  display: none;
+  @media ${deviceSize.tablet} {
+    display: block;
+  }
+`

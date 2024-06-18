@@ -93,7 +93,7 @@ export const Subtitle = styled.p`
   }
 `
 
-export const Paragraph = styled.p`
+export const Paragraph = styled.div`
   color: ${colors.white};
   font-family: 'Lato';
   font-weight: 300;
@@ -117,13 +117,4 @@ export const HomeWrapper = styled.div<{ src?: string }>`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-`
-
-export const HomeImage = styled.img<{ width: string; height: string }>`
-  border: 1px solid #${colors.offWhite}90;
-  border-radius: 3px;
-  display: initial;
-  height: ${({ height }) => height || '100%'};
-  width: ${({ width }) => width || '100%'};
-  object-fit: cover;
 `

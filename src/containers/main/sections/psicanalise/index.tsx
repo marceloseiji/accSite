@@ -1,15 +1,22 @@
 import { Section } from 'containers/main/style'
-import { TextWrapper, Title, Paragraph, PsicanaliseWrapper } from './style'
+import {
+  TextWrapper,
+  Title,
+  Paragraph,
+  PsicanaliseWrapper,
+  ImageWrapper
+} from './style'
 import ResponsiveWrapper from 'components/responsiveWrapper'
-import imgUrl from 'assets/images/psicanalise-background-full.jpg'
-import { SectionDivider } from 'components/sectionDivider/style'
 import getImageHash from 'utils/getImageHash'
+import Image from 'components/image'
+import imgUrl from 'assets/images/amanda-psicanalista_min.jpg'
+import { colors } from 'styles/variables'
 
 const Psicanalise = () => {
   return (
-    <Section url={imgUrl} id="psicanalise-section">
-      <PsicanaliseWrapper src={getImageHash(imgUrl)}>
-        <ResponsiveWrapper>
+    <Section backgroundcolor={colors.primaryStrong} id="psicanalise-section">
+      <ResponsiveWrapper>
+        <PsicanaliseWrapper>
           <TextWrapper>
             <Title>Como a psicanálise pode te ajudar?</Title>
             <Paragraph>
@@ -25,9 +32,11 @@ const Psicanalise = () => {
               mente humana.
             </Paragraph>
           </TextWrapper>
-        </ResponsiveWrapper>
-      </PsicanaliseWrapper>
-      <SectionDivider color="#14181b" />
+          <ImageWrapper>
+            <Image src={getImageHash(imgUrl)} width="250px" height="250px" />
+          </ImageWrapper>
+        </PsicanaliseWrapper>
+      </ResponsiveWrapper>
     </Section>
   )
 }

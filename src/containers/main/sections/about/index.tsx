@@ -2,7 +2,6 @@ import { Section } from 'containers/main/style'
 import { TextWrapper, Title, Paragraph } from './style'
 import ResponsiveWrapper from 'components/responsiveWrapper'
 import imgUrl from 'assets/images/about-background.jpg'
-import { SectionDivider } from 'components/sectionDivider/style'
 
 const About = () => {
   return (
@@ -23,7 +22,6 @@ const About = () => {
             Latine signiferumque ad eos, decore ullamcorper nam.
           </Paragraph>
         </TextWrapper>
-        <SectionDivider color="#444243" />
       </ResponsiveWrapper>
     </Section>
   )

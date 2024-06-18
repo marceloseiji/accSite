@@ -3,19 +3,19 @@ import {
   Paragraph,
   TextWrapper,
   HomeWrapper,
-  HomeImage,
   ImageWrapper,
   BlurWrapper,
   Subtitle,
   TextImageWrapper
 } from './style'
 import { Section } from 'containers/main/style'
-import { SectionDivider } from 'components/sectionDivider/style'
 import imgUrl from 'assets/images/home-background.jpg'
 import getImageHash from 'utils/getImageHash'
 import ResponsiveWrapper from 'components/responsiveWrapper'
 import { colors } from 'styles/variables'
 import ConsultButton from 'components/buttons/consultButton'
+import { HomeButtonWrapper } from 'components/buttons/consultButton/style'
+import Image from 'components/image'
 
 const Home = () => {
   return (
@@ -23,7 +23,7 @@ const Home = () => {
       <ResponsiveWrapper>
         <HomeWrapper>
           <ImageWrapper>
-            <HomeImage src={getImageHash(imgUrl)} width="100%" height="60%" />
+            <Image src={getImageHash(imgUrl)} width="100%" height="60%" />
           </ImageWrapper>
           <TextWrapper>
             <BlurWrapper>
@@ -40,7 +40,7 @@ const Home = () => {
                 <br />
                 <br />
                 <TextImageWrapper>
-                  <HomeImage
+                  <Image
                     src={getImageHash(imgUrl)}
                     width="210px"
                     height="230px"
@@ -50,12 +50,13 @@ const Home = () => {
                 ei, vis eu summo platonem adolescens. Mel solum verear id, qui
                 quem mazim recusabo in.
               </Paragraph>
-              <ConsultButton />
+              <HomeButtonWrapper>
+                <ConsultButton />
+              </HomeButtonWrapper>
             </BlurWrapper>
           </TextWrapper>
         </HomeWrapper>
       </ResponsiveWrapper>
-      <SectionDivider color="#161616" />
     </Section>
   )
 }
