@@ -5,18 +5,12 @@ export const MainSection = styled.main`
   width: 100%;
 `
 
-export const TextWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  height: 100%;
-  justify-content: center;
-`
+export const TextWrapper = styled.div``
 
 export const Title = styled.div`
   color: ${colors.white};
   font-family: 'Lato';
-  font-weight: 400;
+  font-weight: 300;
   font-size: ${textSize.large};
   margin-bottom: 24px;
   text-align: left;
@@ -31,26 +25,20 @@ export const Paragraph = styled.p`
   text-align: left;
 `
 
-export const PsicanaliseWrapper = styled.div<{ src: string }>`
-  display: flex;
+export const PsicanaliseWrapper = styled.div`
   width: 100%;
   height: 100%;
-  background-image: ${props => `url(${props.src})`};
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-
+  padding: 36px 0;
+  display: flex;
+  flex-direction: column;
   @media ${deviceSize.tablet} {
+    flex-direction: row;
   }
 `
 
-export const PsicanaliseImage = styled.img`
-  display: none;
-
-  @media ${deviceSize.tablet} {
-    display: initial;
-    height: 100%;
-    width: 45%;
-    object-fit: cover;
-  }
+export const ImageWrapper = styled.div`
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
