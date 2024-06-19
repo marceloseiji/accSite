@@ -26,7 +26,7 @@ export const Button = styled.button`
   @media ${deviceSize.tablet} {
     position: static;
     width: auto;
-    width: 100%;
+    margin: 0;
   }
 `
 
