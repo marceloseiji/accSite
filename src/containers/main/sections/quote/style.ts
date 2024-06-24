@@ -10,7 +10,7 @@ export const TextWrapper = styled.div`
 
 export const Title = styled.div`
   color: ${colors.white};
-  font-family: 'Lato';
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: ${textSize.large};
   margin-bottom: 24px;
@@ -19,7 +19,7 @@ export const Title = styled.div`
 
 export const Paragraph = styled.p`
   color: ${colors.white};
-  font-family: 'Lato';
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: ${textSize.small};
   padding-top: 16px;

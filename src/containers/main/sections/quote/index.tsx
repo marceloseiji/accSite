@@ -3,7 +3,7 @@ import { TextWrapper, Title, Paragraph } from './style'
 import ResponsiveWrapper from 'components/responsiveWrapper'
 import imgUrl from 'assets/images/about-background.jpg'
 
-const About = () => {
+const Quote = () => {
   return (
     <Section $url={imgUrl} id="about-section">
       <ResponsiveWrapper>
@@ -27,4 +27,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Quote

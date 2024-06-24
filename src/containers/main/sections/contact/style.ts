@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 import { colors, textSize } from 'styles/variables'
 
 export const TextWrapper = styled.div`
@@ -10,7 +10,7 @@ export const TextWrapper = styled.div`
 
 export const Title = styled.div`
   color: ${colors.white};
-  font-family: 'Lato';
+  font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: ${textSize.large};
   text-align: center;
@@ -19,7 +19,7 @@ export const Title = styled.div`
 
 export const Paragraph = styled.p`
   color: ${colors.white};
-  font-family: 'Lato';
+  font-family: 'Poppins', sans-serif;
   font-weight: bolder;
   font-size: ${textSize.small};
   padding-top: 8px;
@@ -31,5 +31,5 @@ export const ButtonsWrapper = styled.div`
   align-self: center;
   display: flex;
   margin-top: 10px;
-  gap: 10px
+  gap: 10px;
 `

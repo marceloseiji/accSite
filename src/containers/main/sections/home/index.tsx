@@ -18,8 +18,15 @@ import { HomeButtonWrapper } from 'components/buttons/consultButton/style'
 import Image from 'components/image'
 
 const Home = () => {
+  const mobileScreen = 425
+  const isMobile = window.innerWidth <= mobileScreen
+
   return (
-    <Section $backgroundcolor={colors.primary} $screenheight id="home-section">
+    <Section
+      $backgroundcolor={colors.primary}
+      $screenheight={!isMobile}
+      id="home-section"
+    >
       <ResponsiveWrapper>
         <HomeWrapper>
           <ImageWrapper>

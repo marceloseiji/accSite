@@ -75,7 +75,7 @@ export const Title = styled.h1`
 
 export const Subtitle = styled.p`
   color: ${colors.white};
-  font-family: 'Lato';
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: ${textSize.tiny};
   margin-top: 16px;
@@ -95,7 +95,7 @@ export const Subtitle = styled.p`
 
 export const Paragraph = styled.div`
   color: ${colors.white};
-  font-family: 'Lato';
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: ${textSize.tiny};
   margin-top: 16px;
