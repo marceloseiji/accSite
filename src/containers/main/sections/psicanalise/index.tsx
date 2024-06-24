@@ -6,13 +6,15 @@ import {
   PsicanaliseWrapper,
   ImageWrapper,
   SectionImage,
-  AdditionalTextWrapperDesktop,
-  AdditionalTextWrapperMobile
+  AdditionalTextWrapperMobile,
+  AdditionalTextWrapperDesktop
 } from './style'
 import ResponsiveWrapper from 'components/responsiveWrapper'
 import getImageHash from 'utils/getImageHash'
 import imgUrl from 'assets/images/home-background.jpg'
 import { colors } from 'styles/variables'
+import ConsultButton from 'components/buttons/consultButton'
+import { PsicanaliseButtonWrapper } from 'components/buttons/consultButton/style'
 
 const Psicanalise = () => {
   return (
@@ -47,6 +49,9 @@ const Psicanalise = () => {
                 Ela influenciou profundamente a psicologia e o entendimento da
                 mente humana.
               </Paragraph>
+              <PsicanaliseButtonWrapper>
+                <ConsultButton />
+              </PsicanaliseButtonWrapper>
             </AdditionalTextWrapperDesktop>
           </TextWrapper>
           <ImageWrapper>

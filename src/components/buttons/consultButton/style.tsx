@@ -53,3 +53,9 @@ export const HomeButtonWrapper = styled.div`
     display: block;
   }
 `
+
+export const PsicanaliseButtonWrapper = styled(HomeButtonWrapper)`
+  @media ${deviceSize.tablet} {
+    margin-top: 16px;
+  }
+`
