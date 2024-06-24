@@ -97,6 +97,5 @@ export const SectionImage = styled.img<{ width: string; height: string }>`
     right: 0;
     top: 0;
     width: 50%;
-    object-position: top;
   }
 `

@@ -9,7 +9,7 @@ import {
   TextImageWrapper
 } from './style'
 import { Section } from 'containers/main/style'
-import imgUrl from 'assets/images/home-background.jpg'
+import imgUrl from 'assets/images/amanda-psicanalista_min_b.jpg'
 import getImageHash from 'utils/getImageHash'
 import ResponsiveWrapper from 'components/responsiveWrapper'
 import { colors } from 'styles/variables'
