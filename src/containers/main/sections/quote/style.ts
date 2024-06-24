@@ -1,27 +1,46 @@
 import styled from 'styled-components'
-import { colors, textSize } from 'styles/variables'
+import { colors, deviceSize, textSize } from 'styles/variables'
 
-export const TextWrapper = styled.div`
+type QuoteMarquerProps = {
+  $isStart: boolean
+}
+
+export const QuoteWrapper = styled.div`
   display: flex;
-  flex-direction: column;
-  height: 100%;
-  padding: 18vh 40px 0 32px;
+  padding: 6vh 0 0 0;
 `
 
-export const Title = styled.div`
+export const QuoteMarquer = styled.span<QuoteMarquerProps>`
   color: ${colors.white};
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: ${textSize.large};
-  margin-bottom: 24px;
-  text-align: right;
+  font-size: ${textSize.ultraLarge};
+  align-content: ${({ $isStart }) => ($isStart ? '' : 'flex-end')};
+  line-height: ${({ $isStart }) => ($isStart ? '' : '0px')};
+
+  @media ${deviceSize.tablet} {
+    font-size: ${textSize.largest};
+  }
 `
 
 export const Paragraph = styled.p`
   color: ${colors.white};
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
+  font-size: ${textSize.large};
+  padding-right: 8px;
+  text-align: center;
+
+  @media ${deviceSize.tablet} {
+    font-size: ${textSize.extraLarge};
+  }
+`
+
+export const QuoteAuthor = styled.p`
+  color: ${colors.white};
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
   font-size: ${textSize.small};
-  padding-top: 16px;
-  text-align: right;
+  padding: 3vh 0 6vh 0;
+  margin-left: 24px;
 `

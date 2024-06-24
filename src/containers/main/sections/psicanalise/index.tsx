@@ -11,7 +11,7 @@ import {
 } from './style'
 import ResponsiveWrapper from 'components/responsiveWrapper'
 import getImageHash from 'utils/getImageHash'
-import imgUrl from 'assets/images/amanda-psicanalista_min_b.jpg'
+import imgUrl from 'assets/images/home-background.jpg'
 import { colors } from 'styles/variables'
 
 const Psicanalise = () => {

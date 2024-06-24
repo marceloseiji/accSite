@@ -1,27 +1,22 @@
 import { Section } from 'containers/main/style'
-import { TextWrapper, Title, Paragraph } from './style'
+import { QuoteWrapper, QuoteMarquer, Paragraph, QuoteAuthor } from './style'
 import ResponsiveWrapper from 'components/responsiveWrapper'
-import imgUrl from 'assets/images/about-background.jpg'
+import { colors } from 'styles/variables'
 
 const Quote = () => {
   return (
-    <Section $url={imgUrl} id="about-section">
+    <Section id="quote" $backgroundcolor={colors.primary}>
       <ResponsiveWrapper>
-        <TextWrapper>
-          <Title>Amanda Calvetti Corrêa</Title>
+        <QuoteWrapper>
+          <QuoteMarquer $isStart>&quot;</QuoteMarquer>
           <Paragraph>
             Lorem ipsum dolor sit amet, an erant vivendo nominavi his, quas
             corpora at usu. Labore facilisis patrioque est ei, sed eu odio prima
-            aliquam.
+            aliquam
           </Paragraph>
-          <Paragraph>
-            Ad vix natum suscipit, persius prodesset ea pri. Homero partiendo ex
-            mei. Latine signiferumque ad eos, decore ullamcorper nam.
-          </Paragraph>
-          <Paragraph>
-            Latine signiferumque ad eos, decore ullamcorper nam.
-          </Paragraph>
-        </TextWrapper>
+          <QuoteMarquer $isStart={false}>&quot;</QuoteMarquer>
+        </QuoteWrapper>
+        <QuoteAuthor>Loremm Ipsumm</QuoteAuthor>
       </ResponsiveWrapper>
     </Section>
   )
