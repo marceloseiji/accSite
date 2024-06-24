@@ -33,7 +33,7 @@ export const Button = styled.button`
 export const ButtonText = styled.span`
   margin-left: 8px;
   color: ${colors.white};
-  font-family: 'Lato';
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: ${textSize.tiny};
 `

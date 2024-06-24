@@ -7,7 +7,7 @@ export const MainSection = styled.main`
 
 export const Title = styled.div`
   color: ${colors.white};
-  font-family: 'Lato';
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: ${textSize.large};
   margin-bottom: 24px;
@@ -16,11 +16,15 @@ export const Title = styled.div`
 
 export const Paragraph = styled.p`
   color: ${colors.white};
-  font-family: 'Lato';
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
-  font-size: ${textSize.small};
+  font-size: ${textSize.tiny};
   padding-top: 16px;
   text-align: left;
+
+  @media ${deviceSize.tablet} {
+    font-size: ${textSize.small};
+  }
 `
 
 export const PsicanaliseWrapper = styled.div`
@@ -39,7 +43,7 @@ export const TextWrapper = styled.div`
   flex-direction: column;
   @media ${deviceSize.tablet} {
     flex: 1;
-    margin-right: 24px;
+    margin-right: 64px;
   }
 `
 
