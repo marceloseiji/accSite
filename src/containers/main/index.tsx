@@ -6,6 +6,7 @@ import BottomNav from 'containers/main/components/bottomNav'
 import { MainSection } from 'containers/main/style'
 import ConsultButton from 'components/buttons/consultButton'
 import { MainButtonWrapper } from 'components/buttons/consultButton/style'
+import Treatment from './sections/treatment'
 
 const Main = () => (
   <>
@@ -13,6 +14,7 @@ const Main = () => (
       <Home />
       <Psicanalise />
       <Quote />
+      <Treatment />
       <Contact />
       <MainButtonWrapper>
         <ConsultButton />

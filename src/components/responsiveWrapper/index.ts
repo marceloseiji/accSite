@@ -13,7 +13,7 @@ const ResponsiveWrapper = styled.div`
   }
 
   @media ${deviceSize.laptop} {
-    width: 1024px;
+    width: 1064px;
   }
 
   @media ${deviceSize.desktop} {
