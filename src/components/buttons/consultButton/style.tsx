@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { textSize, colors, deviceSize } from 'styles/variables'
 
-export const Button = styled.button`
+export const Button = styled.a`
   border: 1px solid #${colors.offWhite};
   border-radius: 3px;
   padding: 12px 16px;
@@ -18,6 +18,7 @@ export const Button = styled.button`
   left: 0;
   bottom: 75px;
   margin: 0 12px;
+  text-decoration: none;
 
   &:hover {
     background-color: ${colors.secondary}99;
@@ -25,7 +26,7 @@ export const Button = styled.button`
 
   @media ${deviceSize.tablet} {
     position: static;
-    width: auto;
+    width: fit-content;
     margin: 0;
   }
 `

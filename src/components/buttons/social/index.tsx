@@ -1,7 +1,6 @@
 import { Button } from './style'
 import WhatsAppIcon from 'assets/icons/WhatsappIcon'
 import InstagramIcon from 'assets/icons/InstagramIcon'
-import React from 'react'
 
 type SocialButton = {
   WhatsApp: () => JSX.Element
