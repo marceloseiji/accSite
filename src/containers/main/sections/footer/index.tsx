@@ -1,17 +1,18 @@
 import { Section } from 'containers/main/style'
-import { TextWrapper, Title, Paragraph, ButtonsWrapper } from './style'
+import { TextWrapper, Title, Paragraph, ButtonsWrapper, Logo } from './style'
 import ResponsiveWrapper from 'components/responsiveWrapper'
-import imgUrl from 'assets/images/contact-background.jpg'
 import SocialButton from 'components/buttons/social'
+import { colors } from 'styles/variables'
 
-const Contact = () => {
+const Footer = () => {
   return (
-    <Section $url={imgUrl} id="contact-section">
+    <Section $backgroundcolor={colors.primary} id="contact-section">
       <ResponsiveWrapper>
         <TextWrapper>
           <Title>Contato</Title>
           <Paragraph>(41) 99922-9920</Paragraph>
           <Paragraph>Centro Cívico | Curitiba, PR</Paragraph>
+          <Logo>Amanda Caveltti Corrêa</Logo>
           <ButtonsWrapper>
             <SocialButton.Instagram />
             <SocialButton.WhatsApp />
@@ -22,4 +23,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Footer

@@ -17,7 +17,7 @@ const BottomNav = () => {
   const sections = [
     { name: 'Home', href: '#home-section' },
     { name: 'Psicanálise', href: '#psicanalise-section' },
-    { name: 'Sobre', href: '#about-section' },
+    { name: 'Tratamento', href: '#treatment-section' },
     { name: 'Contato', href: '#contact-section' }
   ]
 

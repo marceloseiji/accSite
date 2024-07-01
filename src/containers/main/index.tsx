@@ -1,7 +1,7 @@
 import Home from 'containers/main/sections/home/index'
 import Psicanalise from './sections/psicanalise'
 import Quote from './sections/quote'
-import Contact from './sections/contact'
+import Footer from './sections/footer'
 import BottomNav from 'containers/main/components/bottomNav'
 import { MainSection } from 'containers/main/style'
 import ConsultButton from 'components/buttons/consultButton'
@@ -15,7 +15,7 @@ const Main = () => (
       <Psicanalise />
       <Quote />
       <Treatment />
-      <Contact />
+      <Footer />
       <MainButtonWrapper>
         <ConsultButton />
       </MainButtonWrapper>

@@ -51,12 +51,25 @@ export const MainButtonWrapper = styled.div`
 export const HomeButtonWrapper = styled.div`
   display: none;
   @media ${deviceSize.tablet} {
-    display: block;
+    display: flex;
+    justify-content: space-between;
   }
 `
 
 export const PsicanaliseButtonWrapper = styled(HomeButtonWrapper)`
   @media ${deviceSize.tablet} {
     margin-top: 16px;
+  }
+`
+
+export const SocialWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+
+  @media ${deviceSize.tablet} {
+    margin-bottom: 0;
   }
 `

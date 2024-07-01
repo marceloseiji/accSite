@@ -18,7 +18,7 @@ import { PsicanaliseButtonWrapper } from 'components/buttons/consultButton/style
 
 const Treatment = () => {
   return (
-    <Section $backgroundcolor={colors.primaryStrong} id="psicanalise-section">
+    <Section $backgroundcolor={colors.primaryStrong} id="treatment-section">
       <ResponsiveWrapper>
         <TreatmentWrapper>
           <TextWrapper>
