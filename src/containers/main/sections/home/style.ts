@@ -98,8 +98,7 @@ export const Paragraph = styled.div`
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: ${textSize.tiny};
-  margin-top: 16px;
-  margin-bottom: 24px;
+  margin: 16px 0;
   text-align: center;
 
   @media ${deviceSize.tablet} {

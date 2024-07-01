@@ -14,8 +14,13 @@ import getImageHash from 'utils/getImageHash'
 import ResponsiveWrapper from 'components/responsiveWrapper'
 import { colors } from 'styles/variables'
 import ConsultButton from 'components/buttons/consultButton'
-import { HomeButtonWrapper } from 'components/buttons/consultButton/style'
+import {
+  HomeButtonWrapper,
+  SocialWrapper
+} from 'components/buttons/consultButton/style'
 import Image from 'components/image'
+import SocialButton from 'components/buttons/social'
+import { ShowOnMobile } from 'styles/globalStyle'
 
 const Home = () => {
   const mobileScreen = 425
@@ -57,8 +62,18 @@ const Home = () => {
                 ei, vis eu summo platonem adolescens. Mel solum verear id, qui
                 quem mazim recusabo in.
               </Paragraph>
+              <ShowOnMobile>
+                <SocialWrapper>
+                  <SocialButton.Instagram />
+                  <SocialButton.WhatsApp />
+                </SocialWrapper>
+              </ShowOnMobile>
               <HomeButtonWrapper>
                 <ConsultButton />
+                <SocialWrapper>
+                  <SocialButton.Instagram />
+                  <SocialButton.WhatsApp />
+                </SocialWrapper>
               </HomeButtonWrapper>
             </BlurWrapper>
           </TextWrapper>
