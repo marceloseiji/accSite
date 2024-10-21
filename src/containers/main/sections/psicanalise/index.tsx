@@ -24,30 +24,22 @@ const Psicanalise = () => {
           <TextWrapper>
             <Title>Como a psicanálise pode te ajudar?</Title>
             <Paragraph>
-              A psicanálise é uma teoria e método terapêutico criado por Sigmund
-              Freud, focado na compreensão das influências inconscientes na
-              mente humana. Envolve a exploração de desejos, memórias reprimidas
-              e conflitos emocionais através da livre associação e
-              interpretação, visando trazer insight, alívio emocional e mudanças
-              comportamentais.
-            </Paragraph>
-            <Paragraph>
-              Ela influenciou profundamente a psicologia e o entendimento da
-              mente humana.
+              Atendo pessoas com queixas variadas como depressão, ansiedade,
+              problemas de relacionamentos, autoestima, luto, situações
+              traumáticas, etc. No entanto, acredito que cada história é única e
+              o processo da análise vai na direção de poder dar um nome
+              &quot;próprio&quot; ao nosso sofrimento e forma de estar no mundo.
             </Paragraph>
 
             <AdditionalTextWrapperDesktop>
               <Paragraph>
-                A psicanálise é uma teoria e método terapêutico criado por
-                Sigmund Freud, focado na compreensão das influências
-                inconscientes na mente humana. Envolve a exploração de desejos,
-                memórias reprimidas e conflitos emocionais através da livre
-                associação e interpretação, visando trazer insight, alívio
-                emocional e mudanças comportamentais.
-              </Paragraph>
-              <Paragraph>
-                Ela influenciou profundamente a psicologia e o entendimento da
-                mente humana.
+                A minha escuta como analista está atenta para ouvir o que você
+                está dizendo, muitas vezes sem perceber que diz, e, dessa forma,
+                a partir de uma relação de acolhimento e cuidado, você tem a
+                oportunidade de dar voz ao seu conflito psíquico. Isso
+                possibilita uma apropriação e elaboração da própria história,
+                além da criação de um futuro mais alinhado à singularidade de
+                cada um.
               </Paragraph>
               <PsicanaliseButtonWrapper>
                 <ConsultButton />
@@ -63,16 +55,12 @@ const Psicanalise = () => {
           </ImageWrapper>
           <AdditionalTextWrapperMobile>
             <Paragraph>
-              A psicanálise é uma teoria e método terapêutico criado por Sigmund
-              Freud, focado na compreensão das influências inconscientes na
-              mente humana. Envolve a exploração de desejos, memórias reprimidas
-              e conflitos emocionais através da livre associação e
-              interpretação, visando trazer insight, alívio emocional e mudanças
-              comportamentais.
-            </Paragraph>
-            <Paragraph>
-              Ela influenciou profundamente a psicologia e o entendimento da
-              mente humana.
+              A minha escuta como analista está atenta para ouvir o que você
+              está dizendo, muitas vezes sem perceber que diz, e, dessa forma, a
+              partir de uma relação de acolhimento e cuidado, você tem a
+              oportunidade de dar voz ao seu conflito psíquico. Isso possibilita
+              uma apropriação e elaboração da própria história, além da criação
+              de um futuro mais alinhado à singularidade de cada um.
             </Paragraph>
           </AdditionalTextWrapperMobile>
         </PsicanaliseWrapper>
