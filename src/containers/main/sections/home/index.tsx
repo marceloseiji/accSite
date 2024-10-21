@@ -42,13 +42,15 @@ const Home = () => {
               <Title>Amanda Calvetti Corrêa</Title>
               <Subtitle>Psicologia clínica ∙ Psicanálise</Subtitle>
               <Paragraph>
-                Lorem ipsum dolor sit amet, an erant vivendo nominavi his, quas
-                corpora at usu. Labore facilisis patrioque est ei, sed eu odio
-                prima aliquam. Graecis percipit mea cu, dignissim democritum
-                suscipiantur sed ei, vis eu summo platonem adolescens. Mel solum
-                verear id, qui quem mazim recusabo in. Graecis percipit mea cu,
-                dignissim democritum suscipiantur sed ei, vis eu summo platonem
-                adolescens. Mel solum verear id, qui quem mazim recusabo in.
+                Olá
+                <br />
+                <br />
+                Eu me chamo Amanda, sou Psicóloga (CRP 08/27780) graduada pela
+                Universidade Federal do Paraná - UFPR. Também realizo um
+                mestrado em Psicologia pela UFPR, e possuo especialização no
+                formato de Resdiência em Atenção à Saúde do Adulto e Idoso em
+                Psicologia/Psicanálise, realizado pelo Complexo Hospital de
+                Clínicas também da UFPR.
                 <br />
                 <br />
                 <TextImageWrapper>
@@ -58,9 +60,9 @@ const Home = () => {
                     height="230px"
                   />
                 </TextImageWrapper>
-                Graecis percipit mea cu, dignissim democritum suscipiantur sed
-                ei, vis eu summo platonem adolescens. Mel solum verear id, qui
-                quem mazim recusabo in.
+                Direcionei meus estudos e carreira para a área da psicanálise e
+                psicologia clínica, a partir da formação continuada com o tripé:
+                estudos teóricos, supervisão e análise pessoal.
               </Paragraph>
               <ShowOnMobile>
                 <SocialWrapper>

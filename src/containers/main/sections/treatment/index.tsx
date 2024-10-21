@@ -24,30 +24,15 @@ const Treatment = () => {
           <TextWrapper>
             <Title>Como a psicanálise pode te ajudar?</Title>
             <Paragraph>
-              A psicanálise é uma teoria e método terapêutico criado por Sigmund
-              Freud, focado na compreensão das influências inconscientes na
-              mente humana. Envolve a exploração de desejos, memórias reprimidas
-              e conflitos emocionais através da livre associação e
-              interpretação, visando trazer insight, alívio emocional e mudanças
-              comportamentais.
-            </Paragraph>
-            <Paragraph>
-              Ela influenciou profundamente a psicologia e o entendimento da
-              mente humana.
+              Os atendimentos são prestados em meu consultório com localização
+              privilegiada da cidade de Curitiba, próximo ao Shopping Mueller,
+              com uma estrutura bem preparada.
             </Paragraph>
 
             <AdditionalTextWrapperDesktop>
               <Paragraph>
-                A psicanálise é uma teoria e método terapêutico criado por
-                Sigmund Freud, focado na compreensão das influências
-                inconscientes na mente humana. Envolve a exploração de desejos,
-                memórias reprimidas e conflitos emocionais através da livre
-                associação e interpretação, visando trazer insight, alívio
-                emocional e mudanças comportamentais.
-              </Paragraph>
-              <Paragraph>
-                Ela influenciou profundamente a psicologia e o entendimento da
-                mente humana.
+                Também é possível realizá-lo de forma online. Entre em contato
+                pelo meu perfil para conversarmos!
               </Paragraph>
               <PsicanaliseButtonWrapper>
                 <ConsultButton />
@@ -65,16 +50,8 @@ const Treatment = () => {
 
           <AdditionalTextWrapperMobile>
             <Paragraph>
-              A psicanálise é uma teoria e método terapêutico criado por Sigmund
-              Freud, focado na compreensão das influências inconscientes na
-              mente humana. Envolve a exploração de desejos, memórias reprimidas
-              e conflitos emocionais através da livre associação e
-              interpretação, visando trazer insight, alívio emocional e mudanças
-              comportamentais.
-            </Paragraph>
-            <Paragraph>
-              Ela influenciou profundamente a psicologia e o entendimento da
-              mente humana.
+              Também é possível realizá-lo de forma online. Entre em contato
+              pelo meu perfil para conversarmos!
             </Paragraph>
           </AdditionalTextWrapperMobile>
         </TreatmentWrapper>
