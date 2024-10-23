@@ -10,13 +10,12 @@ const Quote = () => {
         <QuoteWrapper>
           <QuoteMarquer $isStart>&quot;</QuoteMarquer>
           <Paragraph>
-            Lorem ipsum dolor sit amet, an erant vivendo nominavi his, quas
-            corpora at usu. Labore facilisis patrioque est ei, sed eu odio prima
-            aliquam
+            Tolerar a vida continua a ser, afinal, a primeira tarefa de todos os
+            seres vivos.
           </Paragraph>
           <QuoteMarquer $isStart={false}>&quot;</QuoteMarquer>
         </QuoteWrapper>
-        <QuoteAuthor>Loremm Ipsumm</QuoteAuthor>
+        <QuoteAuthor>Freud, 1915</QuoteAuthor>
       </ResponsiveWrapper>
     </Section>
   )
