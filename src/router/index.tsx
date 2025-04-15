@@ -4,7 +4,7 @@ import Main from 'containers/main'
 const Router = () => (
   <BrowserRouter>
     <Routes>
-      <Route path="/accSite" element={<Main />} />
+      <Route path="/" element={<Main />} />
     </Routes>
   </BrowserRouter>
 )

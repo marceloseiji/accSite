@@ -24,7 +24,7 @@ module.exports = env => {
       },
       port: env.port,
       historyApiFallback: true,
-      open: ['accSite'],
+      open: ['/'],
       hot: false,
       devMiddleware: { writeToDisk: true }
     },
