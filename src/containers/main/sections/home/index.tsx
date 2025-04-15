@@ -19,8 +19,8 @@ import {
   SocialWrapper
 } from 'components/buttons/consultButton/style'
 import Image from 'components/image'
-import SocialButton from 'components/buttons/social'
 import { ShowOnMobile } from 'styles/globalStyle'
+import SocialButton from 'components/buttons/social'
 
 const Home = () => {
   const mobileScreen = 425
