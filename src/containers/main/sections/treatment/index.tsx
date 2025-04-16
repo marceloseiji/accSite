@@ -22,7 +22,7 @@ const Treatment = () => {
       <ResponsiveWrapper>
         <TreatmentWrapper>
           <TextWrapper>
-            <Title>Como a psicanálise pode te ajudar?</Title>
+            <Title>Sobre os atendimentos</Title>
             <Paragraph>
               Os atendimentos são prestados em meu consultório com localização
               privilegiada da cidade de Curitiba, próximo ao Shopping Mueller,

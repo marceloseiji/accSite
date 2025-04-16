@@ -22,7 +22,7 @@ const Psicanalise = () => {
       <ResponsiveWrapper>
         <PsicanaliseWrapper>
           <TextWrapper>
-            <Title>Como a psicanálise pode te ajudar?</Title>
+            <Title>Como a psicanálise vai te ajudar?</Title>
             <Paragraph>
               Atendo pessoas com queixas variadas como depressão, ansiedade,
               problemas de relacionamentos, autoestima, luto, situações
